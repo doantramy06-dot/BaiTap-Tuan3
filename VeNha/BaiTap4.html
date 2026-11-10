@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài Tập 4 - Menu Ngang</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 30px;
+        }
+
+        /* Định dạng danh sách ul */
+        ul {
+            padding: 0;
+            list-style: none;
+            text-align: center; /* Căn giữa các mục */
+        }
+
+        /* Định dạng từng thẻ li thành khối ngang */
+        ul li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        /* Định dạng thẻ a giống hình mẫu: nền xanh cyan, chữ xanh dương, padding đều */
+        ul li a {
+            display: inline-block;
+            width: 120px;
+            padding: 10px 0;
+            background-color: #00ffff; /* Màu nền xanh cyan giống hình */
+            color: #0000ff;           /* Màu chữ xanh dương */
+            text-decoration: underline; /* Gạch chân chữ */
+            font-weight: bold;
+            text-align: center;
+            border-radius: 2px;
+        }
+
+        /* Hiệu ứng khi rê chuột vào */
+        ul li a:hover {
+            background-color: #00cccc;
+        }
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li><a href="#">TMĐT</a></li>
+        <li><a href="#">ERP</a></li>
+        <li><a href="#">MIS</a></li>
+        <li><a href="#">DS</a></li>
+    </ul>
+
+</body>
+</html>

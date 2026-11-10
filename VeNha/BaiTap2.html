@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài Tập 2 - CSS Basic Full</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        /* 2.a. Đại học UEH: chữ xanh, canh giữa, in đậm, gạch chân, 30px */
+        .ueh-title {
+            color: blue;
+            text-align: center;
+            font-weight: bold;
+            text-decoration: underline;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        /* 2.b. Khoa CNTTD: chữ đỏ, canh phải, in nghiêng, viền chấm màu vàng bo góc, màu nền xám, 15px, chữ mờ 50% */
+        .cntt-box {
+            color: red;
+            text-align: right;
+            font-style: italic;
+            border: 3px dotted yellow;
+            border-radius: 10px;
+            background-color: gray;
+            font-size: 15px;
+            opacity: 0.5;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* 2.c. Định dạng chữ BIT - UEH dùng link (giống hình mẫu) */
+        .bit-link-container {
+            margin-bottom: 20px;
+        }
+        #demotext {
+            color: #A7DD3C;
+            background: #FFFFFF;
+            font-size: 40px;
+            font-weight: bold;
+            display: inline-block;
+            text-decoration: none;
+            text-shadow: 2px 0 0px #800040, 3px 2px 0px rgba(77,0,38,0.5), 3px 0 3px #FF002B, 5px 0 3px #800015, 6px 2px 3px rgba(77,0,13,0.5), 6px 0 9px #FF5500, 8px 0 9px #802A00, 9px 2px 9px rgba(77,25,0,0.5), 9px 0 18px #FFD500, 11px 0 18px #806A00, 12px 2px 18px rgba(77,66,0,0.5), 12px 0 30px #D4FF00, 14px 0 30px #6A8000, 15px 2px 30px rgba(64,77,0,0.5), 15px 0 45px #80FF00, 17px 0 45px #408000, 17px 2px 45px rgba(38,77,0,0.5);
+        }
+
+        /* 2.d. Lấy logo BIT với kích cỡ 30px làm hình nền lặp lại và cố định */
+        .bg-logo-box {
+            width: 100%;
+            height: 80px;
+            background-image: url('https://bit.ueh.edu.vn/wp-content/uploads/2017/06/BIT_logo.png');
+            background-size: 30px 30px;
+            background-repeat: repeat;
+            background-attachment: fixed;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+
+        /* 2.e. Đoạn văn tràn nội dung: Rộng 100px, Cao 50px, ẩn tràn, cắt chữ dấu ..., white-space nowrap */
+        .overflow-box {
+            width: 100px;
+            height: 50px;
+            border: 1px solid #333;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding: 5px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- a. Đại học UEH -->
+    <div class="ueh-title">Đại học UEH</div>
+
+    <!-- b. Khoa CNTTD -->
+    <div class="cntt-box">Khoa CNTTD</div>
+
+    <!-- c. Định dạng chữ BIT-UEH bằng link -->
+    <div class="bit-link-container">
+        <a href="https://bit.ueh.edu.vn" id="demotext" target="_blank">BIT - UEH</a>
+    </div>
+
+    <!-- d. Logo BIT làm hình nền lặp lại và cố định -->
+    <div class="bg-logo-box"></div>
+
+    <!-- e. Đoạn văn TMĐT với các thuộc tính tràn nội dung -->
+    <div class="overflow-box" title="Nhu cầu xã hội Ngành Thương mại điện tử (TMĐT) tại Việt Nam hiện nay đang có những bước tăng trưởng mạnh mẽ...">
+        Nhu cầu xã hội Ngành Thương mại điện tử (TMĐT) tại Việt Nam hiện nay đang có những bước tăng trưởng mạnh mẽ và ngày càng đóng góp nhiều hơn cho sự phát triển kinh tế xã hội của đất nước.
+    </div>
+
+</body>
+</html>

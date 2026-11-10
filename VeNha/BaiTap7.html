@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 7 - Định dạng layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Chữ nhãn 'wrapper' bên ngoài khung */
+        .wrapper-container {
+            width: 320px;
+        }
+
+        .wrapper-label {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        /* Khung wrapper bao ngoài cùng có viền kép/đậm và đổ bóng */
+        #wrapper {
+            width: 100%;
+            border: 2px solid #000;
+            padding: 6px;
+            box-shadow: -12px 12px 25px rgba(0, 0, 0, 0.4); /* Đổ bóng sang trái và xuống dưới */
+            background-color: #fff;
+        }
+
+        /* Header trên cùng */
+        header {
+            border: 2px solid #000;
+            height: 50px;
+            padding: 5px;
+            font-size: 15px;
+            margin-bottom: 6px;
+        }
+
+        /* Khối giữa chứa nav và main nằm cạnh nhau */
+        .content-group {
+            display: flex;
+            gap: 6px;
+            margin-bottom: 6px;
+        }
+
+        /* nav nằm bên trái hẹp hơn */
+        nav {
+            border: 2px solid #000;
+            width: 25%;
+            height: 250px;
+            padding: 5px;
+            font-size: 15px;
+        }
+
+        /* main nằm bên phải rộng hơn */
+        main {
+            border: 2px solid #000;
+            width: 75%;
+            height: 250px;
+            padding: 5px;
+            font-size: 15px;
+        }
+
+        /* footer nằm dưới cùng */
+        footer {
+            border: 2px solid #000;
+            height: 45px;
+            padding: 5px;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper-container">
+        <div class="wrapper-label">wrapper</div>
+
+        <div id="wrapper">
+            <header>header</header>
+            
+            <!-- Nhóm nav và main để dàn hàng ngang -->
+            <div class="content-group">
+                <nav>nav</nav>
+                <main>main</main>
+            </div>
+            
+            <footer>footer</footer>
+        </div>
+    </div>
+
+</body>
+</html>

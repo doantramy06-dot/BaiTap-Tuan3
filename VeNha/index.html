@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hồ Sơ Bài Tập - Tuần 3</title>
+    <!-- Nhúng Font Awesome 5 theo link CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            padding: 40px 15px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 35px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Phần thông tin cá nhân */
+        .profile-card {
+            text-align: center;
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 25px;
+            margin-bottom: 30px;
+        }
+
+        .avatar {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #00bcd4;
+            margin-bottom: 15px;
+        }
+
+        .profile-card h1 {
+            font-size: 26px;
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+
+        .profile-card p {
+            color: #666;
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+
+        /* Liên kết mạng xã hội */
+        .social-links a {
+            display: inline-block;
+            margin: 0 8px;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 50%;
+            background-color: #f1f3f5;
+            color: #495057;
+            font-size: 18px;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .social-links a:hover {
+            background-color: #00bcd4;
+            color: #ffffff;
+            transform: translateY(-3px);
+        }
+
+        /* Danh sách bài tập */
+        h2 {
+            font-size: 20px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .assignment-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .assignment-list li a {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #f8f9fa;
+            border: 1px solid #e9ecef;
+            padding: 15px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            font-size: 15px;
+            transition: all 0.25s ease;
+        }
+
+        .assignment-list li a:hover {
+            background-color: #e3fafc;
+            border-color: #00bcd4;
+            color: #0c8599;
+            transform: translateX(5px);
+        }
+
+        .assignment-list li a i.left-icon {
+            margin-right: 12px;
+            color: #00bcd4;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Thông tin cá nhân -->
+        <div class="profile-card">
+            <!-- Thay avatar.jpg bằng tên ảnh chân dung của bạn hoặc link ảnh trực tiếp -->
+            <img src="avatar.jpg" alt="Avatar" class="avatar" onerror="this.src='https://via.placeholder.com/130'">
+            <h1>Đoàn Trà My</h1>
+            <p><i class="fas fa-university"></i> Sinh viên Đại học UEH &bull; Phát triển ứng dụng Web</p>
+            
+            <!-- Social links -->
+            <div class="social-links">
+                <a href="https://facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://github.com" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="mailto:your-email@ueh.edu.vn" title="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <!-- Danh sách liên kết đến các bài tập đã làm -->
+        <h2><i class="fas fa-tasks"></i> Danh Sách Bài Tập Đã Làm</h2>
+        <ul class="assignment-list">
+            <li>
+                <a href="Baitap2.html">
+                    <span><i class="fas fa-file-code left-icon"></i> Bài 2: Định dạng văn bản CSS cơ bản</span>
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="Baitap4.html">
+                    <span><i class="fas fa-bars left-icon"></i> Bài 4: Menu ngang chuyên ngành (inline-block)</span>
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="Baitap6.html">
+                    <span><i class="fas fa-th left-icon"></i> Bài 6: My Portfolio (Lưới danh mục 3 cột)</span>
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="Baitap7.html">
+                    <span><i class="fas fa-columns left-icon"></i> Bài 7: Định dạng khung bố cục Wrapper</span>
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="Baitap8.html">
+                    <span><i class="fas fa-gamepad left-icon"></i> Bài 8: Heroes of JavaScript and HTML </span>
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            </li>
+            <li>
+                <a href="Baitap9.html">
+                    <span><i class="fas fa-icons left-icon"></i> Bài 9: Sử dụng Font Awesome 5</span>
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</body>
+</html>
